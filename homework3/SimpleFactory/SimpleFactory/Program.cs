@@ -8,13 +8,13 @@ namespace SimpleFactory
 {   
     public abstract class Shape
     {
+        public double area;
         public abstract double Area();
     }
 
     public class Cricle : Shape
     {
         private double r;
-        private double area;
         public Cricle(double r)
         {
             this.r = r;
@@ -29,7 +29,6 @@ namespace SimpleFactory
     public class Triangle : Shape
     {
         private double a, b, c;
-        private double area;
         public Triangle(double a,double b, double c)
         {
             this.a = a;
@@ -47,7 +46,6 @@ namespace SimpleFactory
     public class Square : Shape
     {
         private double a;
-        private double area;
         public Square(double a)
         {
             this.a = a;
@@ -62,7 +60,6 @@ namespace SimpleFactory
     public class Rectangle : Shape
     {
         private double width, height;
-        private double area;
         public Rectangle(double width,double height)
         {
             this.width = width;
